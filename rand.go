@@ -21,6 +21,6 @@ func (r *Rand) Float() float64 {
 	return float64(r.Next()) / 233280
 }
 
-func New(seed int64) *Rand {
+func NewRand(seed int64) *Rand {
 	return &Rand{seed}
 }
